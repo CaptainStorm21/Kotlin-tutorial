@@ -13,7 +13,7 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            Greeting(name = "William")
+            Text(text = "Lorem Ipsum")
         }
     }
 }
@@ -45,6 +45,6 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
 
 fun GreetingPreview() {
     MyApplicationTheme {
-        Greeting("William")
+        Text(text = "Lorem Ipsum")
     }
 }
