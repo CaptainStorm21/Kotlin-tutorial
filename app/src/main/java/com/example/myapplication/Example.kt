@@ -13,11 +13,19 @@ open class Person constructor(val age: Int) {
 fun main(args: Array<String>) {
     val simplePerson: Person = Person(age = 30)
     simplePerson.talk()
+
+    var teacher = Teacher(age = 30)
+    teacher.talk()
+    teacher.teach()
+
+    teacher = Teacher(age = 90)
+    teacher.talk()
 }
 
 class Teacher constructor(age: Int) : Person(age) {
 
-    //override overrides the original instructions of a fun talk on line 7 but we need super
+    //override overrides the original instructions of
+    // a fun talk on line 7 but we need super
     //super we call all the logic from the parent
     override fun talk() {
 
